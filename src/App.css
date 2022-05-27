@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*******************BG-color**********************/
+.bg-white {
+  background-color: #FFF3E9;
+}
+.bg-gray {
+  background-color: #FDFDFD;
+}
+.bg-aqure{
+  background-color: #E1EBED;
+}
+.bg-choc {
+  background-color: #FD7E14;
+}
+.bg-lightbule {
+  background-color: #0096B0;
+}
+.bg-grey {
+  background-color: #B7B7B7;
+}
+.bg-darkbrown {
+  background-color: #3D1E05;
+}
+.bg-darkblue {
+  background-color: #013F49;
+}
+.bg-dark {
+  background-color: #373737;
+}
