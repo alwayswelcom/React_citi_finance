@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  min-width: 393px;
 }
 
 .App-logo {
@@ -65,4 +66,14 @@
 }
 .bg-dark {
   background-color: #373737;
+}
+
+a:link, :visited { 
+  color: white;
+  text-decoration: none; 
+}
+
+a:hover { 
+  color: #FD7E14;
+  text-decoration: none; 
 }
