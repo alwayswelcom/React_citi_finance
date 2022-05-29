@@ -41,7 +41,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="flex items-center justify-center pb-20">
-                <ReactPlayer url='video/gen_vid.mp4' playing={true} width="100%" height="450px" volume={0.5} loop={true} controls={true}/>
+                <ReactPlayer url='video/gen_vid.mp4' playing={true} width="100%" height="450px" volume={0.5} loop={true} controls={true} />
             </div>
             <div className='pb-44'>
                 <div>
@@ -51,17 +51,42 @@ const Home = () => {
                     {InvestType.map((item, idx) => (
                         <InvestCard item={item} key={`invest-${idx}`}></InvestCard>
                     ))}
-                </div>                
+                </div>
             </div>
-            <div className='pt-2.5'>
-            <div>
+            <div className='pt-2.5 pb-2'>
+                <div>
                     <p className='text-darkblue font-bold font-body text-5xl pb-20'>Our contract plans</p>
                 </div>
                 <div className='flex justify-around items-center'>
                     {ContractType.map((item, idx) => (
                         <ContractCard item={item} key={`contract-${idx}`}></ContractCard>
                     ))}
-                </div> 
+                </div>
+            </div>
+            <div className="flex justify-center pt-28">
+                <div className="flex w-1/2 justify-center items-center flex-wrap children:px-6">
+                    <div>
+                        <img src={Images[2].url} />
+                    </div>
+                    <div>
+                        <img src={Images[2].url} />
+                    </div>
+                    <div>
+                        <img src={Images[2].url} />
+                    </div>
+                    <div>
+                        <img src={Images[2].url} />
+                    </div>
+                </div>
+                <div className='text-left w-1/2 pt-28 pl-36 pb-64'>
+                    <p className='font-body text-2xl leading-8 text-darkblue pb-3.5 uppercase font-bold'>our focus</p>
+                    <div className="  border-b-4 w-3/4 border-solid border-orange mb-12"></div>
+                    <p className='text-md-2 font-bold text-5xl leading-10 text-darkblue'>Investments will change our future.
+                        <br /><br /><span> Don't be left out.</span></p><br /><br />
+                    <p className='text-xl leading-6 w-4/5 pb-32 text-darkblue'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non in vitae ultricies integer leo nulla. Nunc etiam velit elit, magna nibh vitae. Nulla pulvinar dignissim pretium sit. Morbi laoreet sagittis, nunc in tellus orci. Tortor sed phasellus mattis arcu vestibulum. Fermentum scelerisque purus morbi fusce enim ornare fringilla. Sed eu vulputate tortor turpis proin erat.</p>
+                    <button className="bg-orange w-52 h-14 rounded text-white">LEARN MORE</button>
+                </div>
+
             </div>
         </div>
     )
