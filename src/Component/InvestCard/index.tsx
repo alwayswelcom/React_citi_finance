@@ -10,7 +10,7 @@ interface PropsInvestlist {
 const InvestCard = ({ item }: { item: PropsInvestlist }) => {
 
     return (
-        <div className="rounded-md shadow-box w-96  text-4xl">
+        <div className="rounded-md shadow-box w-96 text-4xl pb-10">
             <div className="font-bold">
                 {item.type}
             </div>
