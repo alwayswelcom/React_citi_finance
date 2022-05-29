@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className="text-5xl pb-2.5">IMPORTANT LINKS</div>
                     <div className="  border-b-4 w-60 border-solid border-orange mb-12"></div>
                     <div className="font-body font-medium text-xl leading-6">
-                        <ul>
+                        <ul className="list-disc marker:text-orange children:marker:rounded">
                             <li>
                                 <a href="about">About us</a>
                             </li>
@@ -34,11 +34,23 @@ const Footer = () => {
                         CONTACT US
                     </div>
                     <div className=" border-b-4 w-60 border-solid border-orange"></div>
-                    <div className="font-body  font-medium text-xl leading-6">
-                        <ul className="contactinfo">
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                    <div className="font-body  font-medium text-xl leading-6  pt-12">
+                        <ul className="contactinfo children:pb-10">
+                            <li>
+                                <a>
+                                    <img src="svg/Location.svg"></img>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="svg/Phone.svg"></img>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="svg/Mail.svg"></img>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -46,7 +58,7 @@ const Footer = () => {
             <div className="font-body font-medium text-xl flex items-center text-left pb-11">
                 Follow us:
             </div>
-            <div  className="justify-end flex items-center" >
+            <div className="justify-end flex items-center" >
                 <img src="svg/APEX LOGO.svg"></img>
             </div>
         </div>
