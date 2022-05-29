@@ -3,7 +3,7 @@ import StickyMsg from './message.json'
 
 const Home = () => {
     return (
-        <div className='bg-bkimg'>
+        <div className='bg-bkimg bg-no-repeat'>
             <div className='text-left w-1/2 pt-80 pl-36 pb-64'>
                 <p className='font-body text-2xl leading-8 text-darkblue pb-3.5'>WELCOME TO APEX BITCOINS GLOBAL</p>
                 <div className="  border-b-4 w-3/4 border-solid border-orange mb-12"></div>
