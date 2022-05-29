@@ -1,13 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Route,
+  useParams,
+  Routes
+} from "react-router-dom";
 
-import Header from './Layouts/Header';
-
+import Layout from './Layouts';
+import Home from './Layouts/Home';
 function App() {
   return (
-    <div className="App">     
-    <Header />
+    <div className="App">
+      <Layout>
+        <Router>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            {/* <Route path='/about' element={<ABOUT />} />
+            <Route path='/faq' element={<FAQ />} />
+            <Route path='/login' element={<LOGIN />} /> */}
+          </Routes>
+        </Router>
+      </Layout>
     </div>
   );
 }
