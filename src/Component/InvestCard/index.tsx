@@ -4,14 +4,14 @@ interface PropsInvestlist {
     range_max: string,
     rate: number,
     duration: number,
-    content: string
+    content: string,
 }
 
-const InvestCard = ({ item }: { item: PropsInvestlist }) => {
+const InvestCard = ({ item }: { item: PropsInvestlist }, idx: string) => {
 
     return (
         <div className="rounded-md shadow-box w-96 text-4xl pb-10">
-            <div className="font-bold">
+            <div className="font-bold py-6">
                 {item.type}
             </div>
             <div className="bg-darkblue pt-4 pb-6 text-white mb-7 font-title">

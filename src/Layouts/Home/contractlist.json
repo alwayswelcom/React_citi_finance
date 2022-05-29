@@ -1,0 +1,42 @@
+[
+    {
+        "type":"Basic",
+        "range_min": 1000,
+        "range_max": "65000.00",
+        "rate": 22.5,
+        "content_1": "+100% capital release at the expiration of contract.",
+        "method":"Automated",
+        "bots": "Crypto",
+        "content_2": "Capital return on  maturity"
+    },
+    {
+        "type":"Performer",
+        "range_min": 1000,
+        "range_max": "65000.00",
+        "rate": 22.5,
+        "content_1": "+100% capital release at the expiration of contract.",
+        "method":"Automated",
+        "bots": "Crypto",
+        "content_2": "Capital return on  maturity"
+    },
+    {
+        "type":"Supreme",
+        "range_min": 1000,
+        "range_max": "65000.00",
+        "rate": 22.5,
+        "content_1": "+100% capital release at the expiration of contract.",
+        "method":"Automated",
+        "bots": "Crypto",
+        "content_2": "Capital return on  maturity"
+    },
+    {
+        "type":"Turbo",
+        "range_min": 1000,
+        "range_max": "65000.00",
+        "rate": 22.5,
+        "content_1": "+100% capital release at the expiration of contract.",
+        "method":"Automated",
+        "bots": "Crypto",
+        "content_2": "Capital return on  maturity"
+    }
+]
