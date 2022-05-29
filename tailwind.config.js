@@ -8,6 +8,9 @@ module.exports = {
       'body': ['Encode Sans Condensed'],
     },
     extend: {
+      boxShadow: {
+        'box': '2px 6px 12px 2px rgba(0, 0, 0, 0.25)',
+      },
       colors: {
         'darkblue': '#013F49',
         'lightblue': '#E1EBED',

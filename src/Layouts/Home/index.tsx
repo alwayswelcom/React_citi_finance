@@ -1,6 +1,12 @@
+import ReactPlayer from 'react-player'
+
 import Sticky from "../../Component/Sticky"
 import StickyMsg from './message.json'
+import InvestType from './investlist.json'
+import ContractType from './contractlist.json'
 import Images from './images.json'
+import InvestCard from '../../Component/InvestCard'
+import ContractCard from '../../Component/ContractCard'
 
 const Home = () => {
     return (
@@ -27,12 +33,35 @@ const Home = () => {
                 </div>
                 <div className="flex w-1/2">
                     <div className="pr-11">
-                        <img src={Images[1].url}/>
+                        <img src={Images[1].url} />
                     </div>
                     <div className="pt-28">
-                        <img src={Images[0].url}/>
+                        <img src={Images[0].url} />
                     </div>
                 </div>
+            </div>
+            <div className="flex items-center justify-center pb-20">
+                <ReactPlayer url='video/gen_vid.mp4' playing={true} width="100%" height="450px" volume={0.5} loop={true} controls={true}/>
+            </div>
+            <div className='pb-44'>
+                <div>
+                    <p className='text-darkblue font-bold font-body text-5xl pb-20'>Our investment plans</p>
+                </div>
+                <div className='flex justify-around items-center'>
+                    {InvestType.map((item, idx) => (
+                        <InvestCard item={item} key={`invest-${idx}`}></InvestCard>
+                    ))}
+                </div>                
+            </div>
+            <div className='pt-2.5'>
+            <div>
+                    <p className='text-darkblue font-bold font-body text-5xl pb-20'>Our contract plans</p>
+                </div>
+                <div className='flex justify-around items-center'>
+                    {ContractType.map((item, idx) => (
+                        <ContractCard item={item} key={`contract-${idx}`}></ContractCard>
+                    ))}
+                </div> 
             </div>
         </div>
     )

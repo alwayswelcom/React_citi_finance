@@ -1,0 +1,34 @@
+[
+    {
+        "type": "Standart",
+        "range_min": "50",
+        "range_max": "1.999.00",
+        "rate": 5,
+        "duration": 24,
+        "content": "Capital return on maturity"
+    },
+    {
+        "type": "Medium",
+        "range_min": "50",
+        "range_max": "1.999.00",
+        "rate": 5,
+        "duration": 24,
+        "content": "Capital return on maturity"
+    },
+    {
+        "type": "Premium",
+        "range_min": "50",
+        "range_max": "1.999.00",
+        "rate": 5,
+        "duration": 24,
+        "content": "Capital return on maturity"
+    },
+    {
+        "type": "Ultimate",
+        "range_min": "50",
+        "range_max": "1.999.00",
+        "rate": 5,
+        "duration": 24,
+        "content": "Capital return on maturity"
+    }
+]
