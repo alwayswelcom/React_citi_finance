@@ -2,7 +2,9 @@ import ReactPlayer from 'react-player'
 
 import Sticky from "../../Component/Sticky"
 import StickyMsg from './message.json'
+import InvestType from './investlist.json'
 import Images from './images.json'
+import InvestCard from '../../Component/InvestCard'
 
 const Home = () => {
     return (
@@ -38,6 +40,16 @@ const Home = () => {
             </div>
             <div className="flex items-center justify-center pb-20">
                 <ReactPlayer url='video/gen_vid.mp4' playing={true} width="100%" height="450px" volume={0.5} loop={true} controls={true}/>
+            </div>
+            <div>
+                <div>
+                    <p className='text-darkblue font-bold font-body text-5xl pb-20'>Our investment plans</p>
+                </div>
+                <div className='flex justify-around items-center'>
+                    {InvestType.map((item) => (
+                        <InvestCard item={item}></InvestCard>
+                    ))}
+                </div>
             </div>
         </div>
     )
