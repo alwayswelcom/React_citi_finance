@@ -20,6 +20,9 @@ module.exports = {
         'darkbrown': '#3D1E05',
 
       },
+      backgroundImage: {
+        'bkimg': "url('./public/img/background.png')",
+      },
     },
   },
   variants: {

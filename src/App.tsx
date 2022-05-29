@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
   useParams,
-  Routes
+  Routes,
 } from "react-router-dom";
 
 import Layout from './Layouts';
