@@ -4,7 +4,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {      
-      'title': ['Inter'],
+      'title': [''],
       'body': ['Encode Sans Condensed'],
     },
     extend: {
