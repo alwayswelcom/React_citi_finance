@@ -1,3 +1,5 @@
+import ReactPlayer from 'react-player'
+
 import Sticky from "../../Component/Sticky"
 import StickyMsg from './message.json'
 import Images from './images.json'
@@ -27,12 +29,15 @@ const Home = () => {
                 </div>
                 <div className="flex w-1/2">
                     <div className="pr-11">
-                        <img src={Images[1].url}/>
+                        <img src={Images[1].url} />
                     </div>
                     <div className="pt-28">
-                        <img src={Images[0].url}/>
+                        <img src={Images[0].url} />
                     </div>
                 </div>
+            </div>
+            <div className="flex items-center justify-center pb-20">
+                <ReactPlayer url='video/gen_vid.mp4' playing={true} width="100%" height="450px" volume={0.5} loop={true} controls={true}/>
             </div>
         </div>
     )
