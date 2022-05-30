@@ -15,7 +15,10 @@ const RegisterItems = [
     },
     {
         label: "Country",
-        type: "select"
+        type: "select",
+        lists: [
+            "US", "UK"
+        ]
     },
     {
         label: "Enter password",
