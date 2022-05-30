@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const Header = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -9,15 +10,15 @@ const Header = () => {
                     <img src="./svg/APEX LOGO.svg"></img>
                 </div>
                 <div className="text-white">
-                    <ul className="flex items-center justify-end non-italic font-title font-normal text-xl leading-6 children:px-11">
-                        <li>
-                            HOME
-                        </li>
-                        <li>ABOUT US</li>
-                        <li>FAQ</li>
-                        <li>SELET LANGUAGE</li>
-                        <li><button className="bg-orange w-52 h-14 rounded">LOGIN</button></li>
-                    </ul>
+                    <Router>
+                        <ul className="flex items-center justify-end non-italic font-title font-normal text-xl leading-6 children:px-11">
+                            <li><Link to="/">HOME</Link></li>
+                            <li><Link to="/about">ABOUT US</Link></li>
+                            <li><Link to="/faq">FAQ</Link></li>
+                            <li>SELET LANGUAGE</li>
+                            <li><Link to="/login"><button className="bg-orange w-52 h-14 rounded">LOGIN</button></Link></li>
+                        </ul>
+                    </Router>
                 </div>
             </div>
             <div className="md:flex xl:hidden bg-darkblue justify-around items-center">

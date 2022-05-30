@@ -24,7 +24,7 @@ module.exports = {
 
       },
       backgroundImage: {
-        'bkimg': "url('./public/img/background.png')",
+        'homepage': "url('./public/img/background1.png')",
       },
     },
   },
