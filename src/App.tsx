@@ -5,6 +5,7 @@ import {
   useParams,
   Routes,
 } from "react-router-dom";
+import { useState } from 'react';
 
 import Layout from './Layouts';
 import Home from './Layouts/Home';
@@ -13,6 +14,7 @@ import FAQ from './Layouts/Faq';
 import LOGIN from './Layouts/Login';
 import REGISTER from './Layouts/Register';
 function App() {
+
   return (
     <div className="App">
       <Layout>

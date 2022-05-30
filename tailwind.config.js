@@ -14,8 +14,8 @@ module.exports = {
       colors: {
         'darkblue': '#013F49',
         'lightblue': '#E1EBED',
-        'whight-1': '#FFF3E9',
-        'whight-2': '#FDFDFD',
+        'white-1': '#FFF3E9',
+        'white-2': '#FDFDFD',
         'orange': '#FD7E14',
         'lightblue': '#0096B0',
         'grey': '#B7B7B7',
@@ -25,6 +25,7 @@ module.exports = {
       },
       backgroundImage: {
         'homepage': "url('./public/img/background1.png')",
+        'loginpage': "url('./public/img/background4.png')",
       },
     },
   },

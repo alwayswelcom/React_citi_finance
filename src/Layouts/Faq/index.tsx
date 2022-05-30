@@ -1,6 +1,6 @@
 const FAQ = () => {
     return (
-        <div></div>
+        <div>faq</div>
     )
 }
 
