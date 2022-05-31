@@ -13,7 +13,10 @@ const InputField = ({ item }: { item: InputType }) => {
                 <div>
                     <label className="text-white-2">{item.label}</label>
                     <br />
-                    <select name={item.label} id={item.label} className="rounded-md px-5 py-3.5 h-[52px] w-full" placeholder={item.label}>
+                    <select name={item.label} id={item.label} 
+                            className="rounded-md px-5 py-3.5 h-[52px] w-full" 
+                            required={item.require && item.require ? true : false}
+                    >
                         {item.lists?.map((sel, idx) => (
                             <option value={idx}>{sel}</option>
                         ))}                        
