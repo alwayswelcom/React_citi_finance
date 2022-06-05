@@ -24,9 +24,10 @@ module.exports = {
 
       },
       backgroundImage: {
-        'homepage': "url('./public/img/background1.png')",
-        'loginpage': "url('./public/img/background4.png')",
-        'faqpage': "url('./public/img/background3.png')",
+        'homepage': "url('/public/img/background1.png')",
+        'aboutpage': "url('/public/img/background2.png')",
+        'faqpage': "url('/public/img/background3.png')",
+        'loginpage': "url('/public/img/background4.png')",
       },
     },
   },

@@ -1,6 +1,6 @@
 interface PropsContractlist {
     type: string,
-    range_min: number,
+    range_min: string,
     range_max: string,
     rate: number,
     content_1: string,

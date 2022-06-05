@@ -6,9 +6,8 @@ import SeletBox from "../../Component/SelectBox";
 
 
 const options = [
-    { value: 'chocolate', label: 'Chocolate' },
-    { value: 'strawberry', label: 'Strawberry' },
-    { value: 'vanilla', label: 'Vanilla' }
+    { value: 'English', label: 'en' },
+    { value: '中文', label: 'ch' }
 ]
 
 const Header = () => {
@@ -28,7 +27,10 @@ const Header = () => {
                             <li><a href="/">HOME</a></li>
                             <li><a href="/about">ABOUT US</a></li>
                             <li><a href="/faq">FAQ</a></li>
-                            <li onClick={() => setIsSelectLang(!isSelectLang)}>
+                            <li onMouseOver={() => setIsSelectLang(true)} 
+                                onMouseLeave={() => setIsSelectLang(false)} 
+                                className="cursor-pointer"
+                            >
                                 Select language
                                 {isSelectLang && <SeletBox items={options} />}
                             </li>
@@ -41,7 +43,7 @@ const Header = () => {
                     <div className="">
                         <img src="./svg/APEX LOGO.svg"></img>
                     </div>
-                    <div className="w-[94px] h-[83px]" onClick={() => setIsNavOpen(!isNavOpen)}>
+                    <div className="w-[94px] h-[83px]" onMouseOver={() => setIsNavOpen(!isNavOpen)}>
                         <img src="./svg/Menu1.svg"></img>
                     </div>
                 </div>
@@ -51,7 +53,10 @@ const Header = () => {
                             <li><a href="/">HOME</a></li>
                             <li><a href="/about">ABOUT US</a></li>
                             <li><a href="/faq">FAQ</a></li>
-                            <li onClick={() => setIsSelectLang(!isSelectLang)}>
+                            <li onMouseOver={() => setIsSelectLang(true)}
+                                onMouseLeave={() => setIsSelectLang(false)}  
+                                className="cursor-pointer"
+                            >
                                 Select language
                                 {isSelectLang && <SeletBox items={options} />}
                             </li>
