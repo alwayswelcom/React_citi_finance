@@ -4,21 +4,20 @@ import Sticky from "../../Component/Sticky"
 import StickyMsg from './message.json'
 import InvestType from './investlist.json'
 import ContractType from './contractlist.json'
-import Images from './images.json'
 import InvestCard from '../../Component/InvestCard'
 import ContractCard from '../../Component/ContractCard'
 
 const Home = () => {
     return (
-        <div className='bg-bkimg bg-no-repeat bg-contain'>
-            <div className='text-left w-1/2 pt-80 pl-36 pb-64'>
+        <div className='bg-homepage bg-no-repeat bg-contain'>
+            <div className='text-left w-1/2 pt-80 pl-36 pb-56'>
                 <p className='font-body text-2xl leading-8 text-darkblue pb-3.5 uppercase'>WELCOME TO APEX BITCOINS GLOBAL</p>
                 <div className="  border-b-4 w-3/4 border-solid border-orange mb-12"></div>
                 <p className='text-md-2 font-bold text-5xl leading-10 text-darkblue'>Our investment focus is to your <br /><br /><span className='text-orange'>Satisfiction</span></p><br /><br />
                 <p className='text-xl leading-6 w-4/5 pb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis leo consequat non amet mi. Amet, amet, sed ultrices elementum at. Nisl, amet, dui.</p>
                 <button className="bg-orange w-52 h-14 rounded text-white">LEARN MORE</button>
             </div>
-            <div className="flex justify-center items-center pb-14">
+            <div className="flex justify-center items-center pb-14 flex-wrap">
                 {StickyMsg.map((item, i) => (
                     <Sticky title={item.title} key={`tag-${i}`} content={item.content} />
                 ))}
@@ -33,10 +32,16 @@ const Home = () => {
                 </div>
                 <div className="flex w-1/2">
                     <div className="pr-11">
-                        <img src={Images[1].url} />
+                        <div className=' relative'>
+                            <img src={`./img/img2.png`} alt="img2" />
+                            <p className="absolute bottom-2 left-1 bg-orange w-[248px] h-[110px] flex items-center justify-center rounded text-white font-extrabold text-3xl uppercase">team work</p>
+                        </div>
                     </div>
                     <div className="pt-28">
-                        <img src={Images[0].url} />
+                        <div className='relative'>
+                            <img src={`./img/img1.png`} alt="img1" />
+                            <p className="absolute top-0 right-1 bg-orange w-[248px] h-[110px] flex items-center justify-center rounded text-white font-extrabold text-3xl uppercase">30.000+</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -45,9 +50,9 @@ const Home = () => {
             </div>
             <div className='pb-44'>
                 <div>
-                    <p className='text-darkblue font-bold font-body text-5xl pb-20'>Our investment plans</p>
+                    <p className='text-darkblue font-bold font-body text-5xl pb-10'>Our investment plans</p>
                 </div>
-                <div className='flex justify-around items-center'>
+                <div className='flex justify-around items-center flex-wrap'>
                     {InvestType.map((item, idx) => (
                         <InvestCard item={item} key={`invest-${idx}`}></InvestCard>
                     ))}
@@ -55,9 +60,9 @@ const Home = () => {
             </div>
             <div className='pt-2.5 pb-2'>
                 <div>
-                    <p className='text-darkblue font-bold font-body text-5xl pb-20'>Our contract plans</p>
+                    <p className='text-darkblue font-bold font-body text-5xl pb-10'>Our contract plans</p>
                 </div>
-                <div className='flex justify-around items-center'>
+                <div className='flex justify-around items-center flex-wrap'>
                     {ContractType.map((item, idx) => (
                         <ContractCard item={item} key={`contract-${idx}`}></ContractCard>
                     ))}
@@ -66,16 +71,16 @@ const Home = () => {
             <div className="flex justify-center pt-28">
                 <div className="flex w-1/2 justify-center items-center flex-wrap children:px-6">
                     <div>
-                        <img src={Images[2].url} />
+                        <img src={`./img/img3.png`} alt="img3" />
                     </div>
                     <div>
-                        <img src={Images[2].url} />
+                        <img src={`./img/img3.png`} alt="img3" />
                     </div>
                     <div>
-                        <img src={Images[2].url} />
+                        <img src={`./img/img3.png`} alt="img3" />
                     </div>
                     <div>
-                        <img src={Images[2].url} />
+                        <img src={`./img/img3.png`} alt="img3" />
                     </div>
                 </div>
                 <div className='text-left w-1/2 pt-28 pl-36 pb-64'>

@@ -4,7 +4,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {      
-      'title': ['Inter'],
+      'title': [''],
       'body': ['Encode Sans Condensed'],
     },
     extend: {
@@ -14,8 +14,8 @@ module.exports = {
       colors: {
         'darkblue': '#013F49',
         'lightblue': '#E1EBED',
-        'whight-1': '#FFF3E9',
-        'whight-2': '#FDFDFD',
+        'white-1': '#FFF3E9',
+        'white-2': '#FDFDFD',
         'orange': '#FD7E14',
         'lightblue': '#0096B0',
         'grey': '#B7B7B7',
@@ -24,7 +24,10 @@ module.exports = {
 
       },
       backgroundImage: {
-        'bkimg': "url('./public/img/background.png')",
+        'homepage': "url('/public/img/background1.png')",
+        'aboutpage': "url('/public/img/background2.png')",
+        'faqpage': "url('/public/img/background3.png')",
+        'loginpage': "url('/public/img/background4.png')",
       },
     },
   },

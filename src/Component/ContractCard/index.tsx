@@ -1,6 +1,6 @@
 interface PropsContractlist {
     type: string,
-    range_min: number,
+    range_min: string,
     range_max: string,
     rate: number,
     content_1: string,
@@ -12,7 +12,7 @@ interface PropsContractlist {
 const ContractCard = ({ item }: { item: PropsContractlist }) => {
 
     return (
-        <div className="rounded-md shadow-box w-96 text-4xl pb-10">
+        <div className="rounded-md shadow-box w-96 text-4xl py-10 mt-10">
             <div className="font-bold py-6">
                 {item.type}
             </div>

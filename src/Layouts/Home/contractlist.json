@@ -1,7 +1,7 @@
 [
     {
         "type":"Basic",
-        "range_min": 1000,
+        "range_min": "1000",
         "range_max": "65000.00",
         "rate": 22.5,
         "content_1": "+100% capital release at the expiration of contract.",
@@ -11,7 +11,7 @@
     },
     {
         "type":"Performer",
-        "range_min": 1000,
+        "range_min": "1000",
         "range_max": "65000.00",
         "rate": 22.5,
         "content_1": "+100% capital release at the expiration of contract.",
@@ -21,7 +21,7 @@
     },
     {
         "type":"Supreme",
-        "range_min": 1000,
+        "range_min": "1000",
         "range_max": "65000.00",
         "rate": 22.5,
         "content_1": "+100% capital release at the expiration of contract.",
@@ -31,7 +31,7 @@
     },
     {
         "type":"Turbo",
-        "range_min": 1000,
+        "range_min": "1000",
         "range_max": "65000.00",
         "rate": 22.5,
         "content_1": "+100% capital release at the expiration of contract.",
